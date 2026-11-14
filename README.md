@@ -2,6 +2,26 @@
 
 Учебный интерактивный MVP программы «Бюджет контракта». Расчёты и ERP работают локально на вымышленных данных, состояние сохраняется в браузере. Дата учебного портфеля — 12 ноября 2026 года.
 
+**Открыть сайт:** https://romanbelakov24-hue.github.io/bspb-microhedging-demo-2026/
+
+**Репозиторий:** https://github.com/romanbelakov24-hue/bspb-microhedging-demo-2026
+
+## Публикация
+
+GitHub Pages публикует папку `docs/` из ветки `main`. Она содержит собранное статическое приложение. Сайт открывается без авторизации; кабинет хранит изменения только в браузере посетителя.
+
+После изменения исходников:
+
+```sh
+npm run build:pages
+npm test
+git add src scripts public index.html package.json package-lock.json vite.config.ts tsconfig.json README.md docs
+git commit -m "feat: update case demo"
+git push
+```
+
+Дождитесь успешной публикации Pages в GitHub. QR использует постоянную ссылку выше, поэтому при обновлениях на том же адресе менять его не нужно.
+
 ## Запуск
 
 Нужен Node.js 20.19+ либо 22.12+.
